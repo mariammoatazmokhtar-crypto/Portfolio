@@ -452,6 +452,13 @@
     border-top:1px solid var(--line); position:relative; z-index:2;
   }
   footer span{color: var(--pink);}
+
+  .project-link{
+    display:inline-flex; align-items:center; gap:6px;
+    margin-top:16px; font-size:0.85rem; font-weight:600; color: var(--cyan);
+    border-bottom:1px solid transparent; transition: border-color .25s ease, color .25s ease;
+  }
+  .project-link:hover{border-color: var(--cyan); color: var(--pink);}
 </style>
 </head>
 <body>
@@ -475,6 +482,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -628,6 +636,36 @@
     </div>
   </section>
 
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="eyebrow">Services</div>
+      <h2 class="section-title reveal">What I can build for you</h2>
+      <p class="section-sub reveal">From full game mechanics to the UI that ties them together — with a special focus on games that teach.</p>
+
+      <div class="project-grid">
+        <div class="p-card reveal">
+          <div class="p-emoji">🕹️</div>
+          <h3>Unity Game Development</h3>
+          <p>End-to-end game builds in Unity &amp; C# — player controls, core game logic, and scoring/health systems from the ground up.</p>
+          <div class="tech-tags"><span>Unity</span><span>C#</span><span>Game Loops</span></div>
+        </div>
+        <div class="p-card reveal">
+          <div class="p-emoji">🧪</div>
+          <h3>Serious &amp; Educational Games</h3>
+          <p>Games designed with a purpose — turning topics like ecosystems and life cycles into playable, interactive learning experiences.</p>
+          <div class="tech-tags"><span>Serious Games</span><span>Educational Design</span><span>Game Design</span></div>
+        </div>
+        <div class="p-card reveal">
+          <div class="p-emoji">🎛️</div>
+          <h3>UI/UX for Games</h3>
+          <p>Main menus, pause/restart flows, HUDs, timers, and info cards designed to keep players oriented and engaged.</p>
+          <div class="tech-tags"><span>Unity UI</span><span>UX Design</span><span>Prototyping</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- PROJECTS -->
   <section id="projects">
     <div class="wrap">
@@ -639,8 +677,15 @@
         <div class="p-card reveal">
           <div class="p-emoji">🎮</div>
           <h3>From Another World</h3>
-          <p>A complete Unity game featuring custom player controls, core game logic and a full scoring system built from the ground up.</p>
+          <p>A complete Unity game featuring custom player controls, core game logic and a full scoring system built from the ground up. Built for the Egypt Game Jam.</p>
           <div class="tech-tags"><span>Unity</span><span>C#</span><span>Player Controls</span></div>
+          <a href="https://youtu.be/C3CxdwR_Z5k" target="_blank" rel="noopener" class="project-link">▶ Watch gameplay</a>
+        </div>
+        <div class="p-card reveal">
+          <div class="p-emoji">🐸</div>
+          <h3>Spawn Collector</h3>
+          <p>An educational game about a frog's life cycle: the frog uses its tongue to catch insects or a snake, hearts drop if it eats the snake, and a timer keeps the pressure on. Includes info cards on the frog, insect and snake — their role in nature and who eats whom.</p>
+          <div class="tech-tags"><span>Unity</span><span>C#</span><span>Educational Game</span><span>UI (Pause/Restart)</span></div>
         </div>
         <div class="p-card reveal">
           <div class="p-emoji">🖥️</div>
